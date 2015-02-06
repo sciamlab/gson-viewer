@@ -9,14 +9,14 @@ The aim of the project is to define a simple service to render on map the conten
 
 How to use
 --------
-The tool simply takes as input an URI as ```uri``` query parameter and shows the returned data on the map:
-[http://github.sciamlab.com/gson-viewer?uri=rome.gson](http://github.sciamlab.com/gson-viewer?uri=rome.gson)
+The tool simply takes as input an URI as ```uri``` query parameter and shows the returned data on the map.
+Using [this](https://gist.github.com/pstarace/01bb1a568619b171d7ae#file-rome-geojson) gist as example:
+[http://github.sciamlab.com/gson-viewer?uri=https://gist.github.com/pstarace/01bb1a568619b171d7ae#file-rome-geojson](http://github.sciamlab.com/gson-viewer?uri=https://gist.github.com/pstarace/01bb1a568619b171d7ae#file-rome-geojson)
 
 If a wrong uri is passed or the uri doesn't return a valid GeoJson, a world map is shown:
 [http://github.sciamlab.com/gson-viewer?uri=xxx.gson](http://github.sciamlab.com/gson-viewer?uri=xxx.gson)
 
-If you need to pass any other query parameter to the GeoJson endpoint, simply add them to the query string:
-[http://github.sciamlab.com/gson-viewer?uri=rome.gson&param=other](http://github.sciamlab.com/gson-viewer?uri=rome.gson&param=other)
+If you need to pass any other query parameters to the GeoJson endpoint, simply add them to the query string and they will be passed to the url.
 
 Contribute
 ----------
