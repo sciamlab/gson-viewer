@@ -1,0 +1,41 @@
+body {
+    margin-bottom:50px;
+    margin-top: 60px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: calc(100% - 110px);
+}
+
+
+#map{
+    height: 100%;/*calc(100% - 110px);*/
+}
+
+.header, .footer {
+	background-color: #cacaca;
+    position:fixed;
+    left:0px;
+    right:0px;
+}
+
+.header{
+    height:60px;
+    top:0px;
+    margin-top:0px;
+}
+
+.footer{
+    height:50px;
+    bottom:0px;
+    margin-bottom:0px;
+}
+
+#map{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
