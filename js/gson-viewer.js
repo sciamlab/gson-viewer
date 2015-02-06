@@ -8,12 +8,8 @@ var headers = req.getAllResponseHeaders().toLowerCase();
 //alert(headers);
 */
 function getRequestParameter(name){
-    //alert(location.search.substring(1));
-    if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search)){
-        var p = decodeURIComponent(name[1]);
-        //alert(p)
-        return p;
-    }
+    if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+        return decodeURIComponent(name[1]);
 }
 
 function onLoad(){
@@ -26,7 +22,6 @@ function onLoad(){
     if(getRequestParameter("uri"))
         doAjax("GET", getRequestParameter("uri"), "", location.search.substring(1), null, true, 
                 function(result){
-                    //alert(result);
                     try {
                         var geojson = JSON.parse(result);
                         gson_layer.addData(geojson);       
@@ -68,8 +63,6 @@ function doAjax(method, host, service, query, data, asynch, callback){
             }
         };
         requestObj.open(method, host+service+'?'+query, asynch);
-        requestObj.setRequestHeader("Content-type","application/json");
-        requestObj.setRequestHeader("Authorization","011299fe-39ae-4550-adbd-5683774b380c");
         requestObj.send(data);
     }
 }
