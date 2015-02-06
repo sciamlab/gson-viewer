@@ -1,43 +1,30 @@
-ckan-multilingual-translator
+gson-viewer
 ============================
 
-Bootstrap based CKAN multilingual translator SPA tool
+GeoJson Viewer
 
 Intro
 -----------------------
-If you are using the CKAN [multilingual extension](http://docs.ckan.org/en/latest/maintaining/multilingual.html) you 
-will probably require this tool as it will provide a nicer and quick interface to maintain localizations for the many strings that typically require translations.
+The aim of the project is to define a simple service to render on map the content of a URI returning dat in [GeoJson](http://geojson.org/) format
 
-
-Features
+How to use
 --------
-The tool is a Single Page Application (SPA) as show in the quite self explicative screen:
+The tool simply takes as input an URI as '''uri''' query parameter and shows it on the map:
+[http://github.sciamlab.com/gson-viewer/?uri=rome.gson](http://github.sciamlab.com/gson-viewer?uri=rome.gson)
 
-
-The key features are:
-* quick access and translate labels and strings of Datasets, Resources, Groups/Organizations, Tags and Dataset Extra fields
-* filtering capability by translation status or by keyword
-* easily usable by persons with translation skills only.
-* completelly decoupled from CKAN
-* authorization based on CKAN API Keys (via ckan4j-webapi)
-* easy customizable
-* super easy deployment
-
-
-Dependencies
-------------
-The tools require a properly configured and working [ckan4j-webapi](http://github.com/sciamlab/ckan4j-webapi) that provide the appropriate translation WebAPI services for a given CKAN instance
+If a wrong uri is passed or the uri doesn't return a valid GeoJson, a world map is shown:
+[http://github.sciamlab.com/gson-viewer/?uri=xxx.gson](http://github.sciamlab.com/gson-viewer?uri=xxx.gson)
 
 Contribute
 ----------
-The tool is pretty stable as it has been extensivelly tested and used for www.opendatahub.it and other CKAN based catalogs. If you spot any issue please report on [ideas and bugs](https://github.com/sciamlab/ckan-multilingual-translator/issues)
+The tool is pretty stable as it has been extensivelly tested. If you spot any issue please report on [ideas and bugs](https://github.com/sciamlab/gson-viewer/issues)
 
 
 
 License
 -------
 
-    Copyright 2013-2014 Sciamlab s.r.l.
+    Copyright 2015 Sciamlab s.r.l.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
