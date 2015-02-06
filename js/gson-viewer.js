@@ -63,6 +63,7 @@ function doAjax(method, host, service, query, data, asynch, callback){
             }
         };
         requestObj.open(method, host+service+'?'+query, asynch);
+        requestObj.setRequestHeader("Accept", "application/json");
         requestObj.send(data);
     }
 }
