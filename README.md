@@ -10,6 +10,7 @@ The aim of the project is to define a simple service to render on map the conten
 How to use
 --------
 The tool simply takes as input an URI as ```uri``` query parameter and shows the returned data on the map.
+
 Using [this](https://gist.github.com/pstarace/01bb1a568619b171d7ae#file-rome-geojson) gist as example:
 [http://github.sciamlab.com/gson-viewer?uri=https://gist.githubusercontent.com/pstarace/01bb1a568619b171d7ae/raw/74c28fa998872bebfe8e5b5915f0c4d4d779595c/rome.geojson](http://github.sciamlab.com/gson-viewer?uri=https://gist.githubusercontent.com/pstarace/01bb1a568619b171d7ae/raw/74c28fa998872bebfe8e5b5915f0c4d4d779595c/rome.geojson)
 
