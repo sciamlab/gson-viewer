@@ -11,7 +11,7 @@ How to use
 --------
 The tool simply takes as input an URI as ```uri``` query parameter and shows the returned data on the map.
 Using [this](https://gist.github.com/pstarace/01bb1a568619b171d7ae#file-rome-geojson) gist as example:
-[http://github.sciamlab.com/gson-viewer?uri=https://gist.github.com/pstarace/01bb1a568619b171d7ae#file-rome-geojson](http://github.sciamlab.com/gson-viewer?uri=https://gist.github.com/pstarace/01bb1a568619b171d7ae#file-rome-geojson)
+[http://github.sciamlab.com/gson-viewer?uri=https://gist.githubusercontent.com/pstarace/01bb1a568619b171d7ae/raw/74c28fa998872bebfe8e5b5915f0c4d4d779595c/rome.geojson](http://github.sciamlab.com/gson-viewer?uri=https://gist.githubusercontent.com/pstarace/01bb1a568619b171d7ae/raw/74c28fa998872bebfe8e5b5915f0c4d4d779595c/rome.geojson)
 
 If a wrong uri is passed or the uri doesn't return a valid GeoJson, a world map is shown:
 [http://github.sciamlab.com/gson-viewer?uri=xxx.gson](http://github.sciamlab.com/gson-viewer?uri=xxx.gson)
