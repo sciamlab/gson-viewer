@@ -1,19 +1,22 @@
 gson-viewer
 ============================
 
-GeoJson Viewer
+SciamLab GeoJson Viewer
 
 Intro
 -----------------------
-The aim of the project is to define a simple service to render on map the content of a URI returning dat in [GeoJson](http://geojson.org/) format
+The aim of the project is to define a simple service to render on map the content of a URI returning data in [GeoJson](http://geojson.org/) format
 
 How to use
 --------
-The tool simply takes as input an URI as '''uri''' query parameter and shows it on the map:
+The tool simply takes as input an URI as ```uri``` query parameter and shows the returned data on the map:
 [http://github.sciamlab.com/gson-viewer/?uri=rome.gson](http://github.sciamlab.com/gson-viewer?uri=rome.gson)
 
 If a wrong uri is passed or the uri doesn't return a valid GeoJson, a world map is shown:
 [http://github.sciamlab.com/gson-viewer/?uri=xxx.gson](http://github.sciamlab.com/gson-viewer?uri=xxx.gson)
+
+If you need to pass any other query parameter to the GeoJson endpoint, simply add them to the query string:
+[http://github.sciamlab.com/gson-viewer/?uri=rome.gson&param=other](http://github.sciamlab.com/gson-viewer?uri=rome.gson&param=other)
 
 Contribute
 ----------
