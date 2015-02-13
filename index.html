@@ -12,20 +12,31 @@
 </head>
 
 <body onload="onLoad()">
-	<div class="header">
-		<div style="float:left; margin-left: 20px;">
+	<div class="header row">
+		<div class="col-lg-2" style="padding-left:40px">
             <a href="http://www.sciamlab.com">
                 <img src="http://www.sciamlab.com/images/sciamlab_logo_143x59_bg_transp.png" style="margin-top: -6px;margin-left: 2px;"></img>
             </a>
         </div>
-        <div style="float: right; text-align: right; margin-right: 20px;">
+        <div class="col-lg-8">
+            <div class="input-group" style="margin-left: auto; margin-right: auto;margin-top: 12px; width: 75%">
+                <input id="text-uri" type="text" class="form-control" 
+                       placeholder="Paste here your geojson endpoint ..." onkeypress="if(event.keyCode == 13) go()">
+                <span class="input-group-btn">
+                    <button id="button-go" class="btn btn-default" type="button" onclick="go();">
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-2"  style="text-align: right; padding-right: 40px;">
             <a href="https://github.com/sciamlab/gson-viewer">
-                <img src="img/github-logo.png" style="width: 13%; height: auto;"></img>
+                <img src="img/github-logo.png" style="width: 21%; height: auto;"></img>
             </a>
         </div>
 	</div>
 	
-    <div id="map"></div>
+    <div id="map" class="container-fluid"></div>
 
 	<div class="footer">
       <p class="text-muted" style="text-align: center;padding-top:15px;">Copyright © 2015 SciamLab s.r.l.</p>
