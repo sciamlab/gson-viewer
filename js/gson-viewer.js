@@ -24,6 +24,8 @@ function go(){
 
 function render(uri, params){
     //alert(uri+" "+params);
+    if(params==undefined)
+        params="";
     if(uri){
         document.getElementById("text-uri").value = uri + "?" + params;
         doAjax("GET", uri, "", params, null, true, 
