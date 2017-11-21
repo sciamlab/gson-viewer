@@ -14,6 +14,8 @@ body{
 
 #map{
     height: 100%;/*calc(100% - 110px);*/
+		margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 .header, .footer {
@@ -33,9 +35,4 @@ body{
     height:50px;
     bottom:0px;
     margin-bottom:0px;
-}
-
-#map{
-    margin-top: 60px;
-    margin-bottom: 50px;
 }

@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>SciamLab GeoJson Viewer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/gson-viewer.css">
-    <script src="js/gson-viewer.js"></script>
+	<script src="js/gson-viewer.js"></script>
 </head>
 
 <body onload="onLoad()">
 	<div class="header row">
-		<div class="col-lg-2" style="padding-left:40px">
-            <a href="http://www.sciamlab.com">
-                <img src="http://www.sciamlab.com/images/sciamlab_logo_143x59_bg_transp.png" style="margin-top: -6px;margin-left: 2px;"></img>
-            </a>
-        </div>
-        <div class="col-lg-8">
-            <div class="input-group" style="margin-left: auto; margin-right: auto;margin-top: 12px; width: 75%">
-                <input id="text-uri" type="text" class="form-control" 
-                       placeholder="Paste here your geojson endpoint ..." onkeypress="if(event.keyCode == 13) go()">
-                <span class="input-group-btn">
-                    <button id="button-go" class="btn btn-default" type="button" onclick="go();">
-                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                    </button>
-                </span>
-            </div>
-        </div>
-        <div class="col-lg-2"  style="text-align: right; padding-right: 40px;">
-            <a href="https://github.com/sciamlab/gson-viewer">
-                <img src="img/github-logo.png" style="width: 21%; height: auto;"></img>
-            </a>
-        </div>
+		<!-- <div class="col-lg-2" style="padding-left:40px">
+			<a href="http://www.sciamlab.com">
+          <img src="https://www.sciamlab.com/img/sciamlab_logo_color_254x78.png" style="margin-top: -6px;margin-left: 2px;"></img>
+      </a>
+		</div> -->
+		<!-- <div class="col-lg-8"> -->
+		<div class="text-center">
+			<div class="input-group" style="margin-left: auto; margin-right: auto;margin-top: 12px; width: 75%">
+				<input id="text-uri" type="text" class="form-control" placeholder="Paste here your geojson endpoint ..." onkeypress="if(event.keyCode == 13) go()">
+				<span class="input-group-btn">
+	        <button id="button-go" class="btn btn-default" type="button" onclick="go();">
+	            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+					</button>
+				</span>
+			</div>
+		</div>
+		<!-- <div class="col-lg-2" style="text-align: right; padding-right: 40px;">
+			<a class="pull-right" href="https://github.com/sciamlab/gson-viewer">
+					<img src="img/github-logo.png" style="width: 21%; height: auto;"></img>
+			</a>
+		</div> -->
 	</div>
-	
-    <div id="map" class="container-fluid"></div>
+
+	<div id="map" class="container-fluid"></div>
 
 	<div class="footer">
-      <p class="text-muted" style="text-align: center;padding-top:15px;">Copyright © 2015 SciamLab s.r.l.</p>
-    </div>
-	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<div class="text-muted" style="text-align: center;padding-top:15px;">
+			<span>Copyright © 2015 SciamLab s.r.l.</span>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	
+
 </body>
+
 </html>
